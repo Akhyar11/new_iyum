@@ -1,0 +1,305 @@
+{
+  ".ngodingpakeaiignore": {
+    "summary": "Konfigurasi pengecualian sinkronisasi repositori NgodingPakeAI untuk mengabaikan artefak build, dependensi, dan folder temporer."
+  },
+  "AGENTS.md": {
+    "summary": "Panduan kerja dan instruksi integrasi NgodingPakeAI untuk agen AI dalam mengelola siklus perencanaan, sinkronisasi codebase, dan penyelesaian tugas."
+  },
+  "api/admin/dashboard/summary.ts": {
+    "summary": "Serverless API route Vercel untuk menyajikan ringkasan metrik statistik admin dashboard meliputi total paket, pertanyaan kuesioner, dan riwayat rekomendasi."
+  },
+  "api/admin/dashboard/top-package.ts": {
+    "summary": "Serverless API route Vercel untuk mengambil data paket make up paling direkomendasikan beserta persentase kepopuleran dan riwayat pemilihannya."
+  },
+  "api/admin/verify.ts": {
+    "summary": "Serverless API route Vercel untuk memverifikasi keabsahan sesi login admin melalui token otorisasi Bearer."
+  },
+  "api/auth/login.ts": {
+    "summary": "Serverless API route Vercel untuk menangani proses login admin, validasi kredensial pengguna, dan penerbitan token sesi akses."
+  },
+  "api/auth/logout.ts": {
+    "summary": "Serverless API route Vercel untuk mengakhiri sesi admin aktif dan menginvalidasi token autentikasi."
+  },
+  "api/criteria/weights.ts": {
+    "summary": "Serverless API route Vercel alias yang mengarahkan permintaan pengelolaan bobot kriteria SAW ke handler kriteria utama."
+  },
+  "api/criteria.ts": {
+    "summary": "Serverless API route Vercel untuk membaca daftar kriteria keputusan SAW dan memperbarui persentase bobot kriteria penilaian."
+  },
+  "api/dashboard/summary.ts": {
+    "summary": "Serverless API route Vercel alias untuk menyediakan data ringkasan metrik dashboard admin."
+  },
+  "api/dashboard/top-package.ts": {
+    "summary": "Serverless API route Vercel alias untuk menyediakan informasi paket teratas yang paling banyak direkomendasikan."
+  },
+  "api/history.ts": {
+    "summary": "Serverless API route Vercel alias untuk endpoint daftar riwayat rekomendasi paket rias pengguna."
+  },
+  "api/login.ts": {
+    "summary": "Serverless API route Vercel alias untuk endpoint autentikasi login akun pengelola admin."
+  },
+  "api/logout.ts": {
+    "summary": "Serverless API route Vercel alias untuk endpoint pembatalan sesi login admin."
+  },
+  "api/matrix.ts": {
+    "summary": "Serverless API route Vercel untuk membaca, memperbarui nilai sel, serta mereset matriks penilaian opsi jawaban kriteria SAW."
+  },
+  "api/middleware/auth.ts": {
+    "summary": "Fungsi middleware autentikasi serverless untuk memvalidasi token JWT atau Bearer sesi admin pada route API terproteksi."
+  },
+  "api/options/[id].ts": {
+    "summary": "Serverless API route Vercel untuk mengambil detail, memperbarui, atau menghapus opsi jawaban spesifik berdasarkan parameter ID."
+  },
+  "api/options.ts": {
+    "summary": "Serverless API route Vercel untuk mengambil seluruh data opsi jawaban kuesioner dan menambahkan opsi pilihan baru."
+  },
+  "api/packages/[id].ts": {
+    "summary": "Serverless API route Vercel untuk membaca detail paket, memperbarui informasi paket make up, atau menghapusnya berdasarkan ID."
+  },
+  "api/packages.ts": {
+    "summary": "Serverless API route Vercel untuk mengambil katalog daftar paket make up dan mendaftarkan paket rias baru ke database."
+  },
+  "api/questions/recommendation.ts": {
+    "summary": "Serverless API route Vercel untuk menyajikan daftar pertanyaan kuesioner aktif lengkap dengan opsi jawabannya bagi pengguna publik."
+  },
+  "api/questions/reorder.ts": {
+    "summary": "Serverless API route Vercel untuk mengatur dan memperbarui urutan nomor tampilan pertanyaan kuesioner rekomendasi."
+  },
+  "api/questions/[id].ts": {
+    "summary": "Serverless API route Vercel untuk membaca detail pertanyaan kuesioner, memperbarui data pertanyaan, atau menghapus pertanyaan berdasarkan ID."
+  },
+  "api/questions.ts": {
+    "summary": "Serverless API route Vercel untuk mengambil seluruh pertanyaan kuesioner rias dan membuat butir pertanyaan baru."
+  },
+  "api/recommendations/history.ts": {
+    "summary": "Serverless API route Vercel untuk mengambil daftar riwayat rekomendasi pengguna dengan filter status dan kata kunci."
+  },
+  "api/recommendations/[id].ts": {
+    "summary": "Serverless API route Vercel untuk melihat rincian jawaban sesi rekomendasi serta memperbarui status tindak lanjut pengguna."
+  },
+  "api/recommendations.ts": {
+    "summary": "Serverless API route Vercel untuk menjalankan perhitungan algoritma Simple Additive Weighting (SAW) dan menyimpan sesi rekomendasi baru."
+  },
+  "api/reports/package-popularity.ts": {
+    "summary": "Serverless API route Vercel untuk menyajikan statistik kepopuleran paket make up, persentase minat, dan proyeksi potensi pendapatan."
+  },
+  "api/reports/stats.ts": {
+    "summary": "Serverless API route Vercel alias untuk endpoint statistik paket diminati."
+  },
+  "api/reports.ts": {
+    "summary": "Serverless API route Vercel alias untuk endpoint laporan data dan statistik popularitas paket."
+  },
+  "api/weights.ts": {
+    "summary": "Serverless API route Vercel alias untuk pengelolaan bobot preferensi kriteria keputusan SAW."
+  },
+  "index.html": {
+    "summary": "File HTML utama aplikasi SPA yang menginisialisasi elemen root DOM, memuat font Inter, dan menyertakan skrip utama Vite React."
+  },
+  "package-lock.json": {
+    "summary": "Lockfile dependensi npm yang mencatat versi persis dari pustaka pihak ketiga dan pohon dependensi proyek."
+  },
+  "package.json": {
+    "summary": "Manifest konfigurasi proyek npm yang mendefinisikan dependensi React, TypeScript, Tailwind CSS, Supabase, serta skrip build dan development."
+  },
+  "postcss.config.js": {
+    "summary": "Konfigurasi plugin PostCSS untuk memproses utilitas Tailwind CSS dan Autoprefixer pada styling antarmuka aplikasi."
+  },
+  "scripts/migrate.js": {
+    "summary": "Skrip migrasi database Node.js untuk mengeksekusi berkas migrasi SQL Supabase secara berurutan guna membentuk skema basis data."
+  },
+  "scripts/seed.js": {
+    "summary": "Skrip penabur data awal (seed) untuk mengisi tabel paket make up, kriteria, matriks nilai, dan pertanyaan kuesioner ke Supabase."
+  },
+  "server/handlers/auth.js": {
+    "summary": "Handler autentikasi server backend Node.js untuk validasi login admin, penerbitan token sesi, dan proses logout."
+  },
+  "server/handlers/criteria.js": {
+    "summary": "Handler server backend Node.js untuk membaca daftar kriteria SAW, memperbarui persentase bobot kriteria, dan mereset ke bobot standar."
+  },
+  "server/handlers/dashboard.js": {
+    "summary": "Handler server backend Node.js untuk menghitung ringkasan statistik metrik dashboard admin dan mengidentifikasi paket terpopuler."
+  },
+  "server/handlers/matrix.js": {
+    "summary": "Handler server backend Node.js untuk mengelola matriks nilai kecocokan opsi jawaban kriteria SAW terhadap alternatif paket."
+  },
+  "server/handlers/packages.js": {
+    "summary": "Handler server backend Node.js untuk operasi CRUD paket make up, penggantian status aktif, dan filtering data paket."
+  },
+  "server/handlers/questions.js": {
+    "summary": "Handler server backend Node.js untuk pengelolaan pertanyaan kuesioner, pengurutan ulang nomor urut, dan manipulasi opsi jawaban."
+  },
+  "server/handlers/recommendations.js": {
+    "summary": "Handler server backend Node.js untuk kalkulasi SPK metode SAW, riwayat sesi rekomendasi, dan detail jawaban kuesioner."
+  },
+  "server/handlers/reports.js": {
+    "summary": "Handler server backend Node.js untuk agregasi statistik paket paling diminati, proporsi persentase rekomendasi, dan potensi pendapatan."
+  },
+  "server/index.js": {
+    "summary": "Server HTTP Node.js utama yang mengonfigurasi routing REST API lokal, penguraian request body, dan penanganan endpoint sistem rekomendasi."
+  },
+  "server/middleware/authMiddleware.js": {
+    "summary": "Middleware server backend Node.js untuk memvalidasi token sesi admin pada header permintaan HTTP sebelum mengakses handler terproteksi."
+  },
+  "server/services/adminAuth.js": {
+    "summary": "Layanan otentikasi admin backend untuk verifikasi kecocokan kredensial dan pengelolaan token sesi aman."
+  },
+  "src/App.tsx": {
+    "summary": "Komponen root aplikasi React yang mengatur rute navigasi halaman publik dan panel admin dengan pembungkus proteksi sesi login."
+  },
+  "src/components/admin/OptionModal.tsx": {
+    "summary": "Komponen dialog modal admin untuk menambah atau menyunting teks label dan nilai kecocokan opsi jawaban kuesioner."
+  },
+  "src/components/admin/PackageFormModal.tsx": {
+    "summary": "Komponen dialog modal admin untuk membuat dan mengedit informasi paket make up, harga, kategori, dan daftar fiturnya."
+  },
+  "src/components/admin/QuestionFormModal.tsx": {
+    "summary": "Komponen dialog modal admin untuk merumuskan pertanyaan kuesioner baru atau mengedit pertanyaan yang sudah ada."
+  },
+  "src/components/admin/ReorderQuestionsModal.tsx": {
+    "summary": "Komponen modal antarmuka admin untuk mengubah susunan urutan pertanyaan kuesioner menggunakan tombol navigasi."
+  },
+  "src/components/AdminHeader.tsx": {
+    "summary": "Komponen bilah navigasi atas area admin yang menampilkan identitas pengelola, judul halaman aktif, dan tombol aksi logout."
+  },
+  "src/components/AdminSummaryCards.tsx": {
+    "summary": "Komponen grid kartu indikator metrik pada dashboard admin untuk menampilkan kuantitas paket, pertanyaan, dan total riwayat."
+  },
+  "src/components/AlternativePackagesList.tsx": {
+    "summary": "Komponen daftar paket alternatif hasil evaluasi SAW yang memuat skor preferensi, harga paket, dan indikator kecocokan kriteria."
+  },
+  "src/components/Footer.tsx": {
+    "summary": "Komponen kaki halaman aplikasi yang menampilkan profil studio make up, media sosial, tautan cepat, dan informasi hak cipta."
+  },
+  "src/components/MostRecommendedSection.tsx": {
+    "summary": "Komponen beranda publik yang menyorot paket rias pengantin paling diminati dan paling banyak direkomendasikan."
+  },
+  "src/components/Navbar.tsx": {
+    "summary": "Komponen navigasi atas aplikasi publik dengan tautan menu ke halaman katalog rias, rekomendasi paket, dan gerbang admin."
+  },
+  "src/components/PackageCard.tsx": {
+    "summary": "Komponen kartu presentasi paket make up di katalog publik dengan foto, label kategori, harga sewa, dan ringkasan fasilitas."
+  },
+  "src/components/PackageDetailModal.tsx": {
+    "summary": "Komponen modal pop-up untuk membaca rincian lengkap spesifikasi paket rias, galeri foto, dan konsultasi pemesanan."
+  },
+  "src/components/PackagePopularityStats.tsx": {
+    "summary": "Komponen statistik visualisasi kepopuleran paket make up untuk admin dengan indikator persentase minat dan estimasi pendapatan."
+  },
+  "src/components/ProtectedRoute.tsx": {
+    "summary": "Komponen pelindung rute yang memastikan pengguna memiliki sesi login admin yang valid sebelum menampilkan halaman terproteksi."
+  },
+  "src/components/RecommendationHistoryTable.tsx": {
+    "summary": "Komponen tabel interaktif untuk menampilkan riwayat rekomendasi pengguna lengkap dengan pencarian, filter status, dan navigasi halaman."
+  },
+  "src/components/TopRecommendationCard.tsx": {
+    "summary": "Komponen kartu sorotan utama yang menyajikan paket rekomendasi terbaik peringkat pertama hasil kalkulasi SAW beserta nilai skor akhirnya."
+  },
+  "src/data/mockDashboard.ts": {
+    "summary": "Dataset tiruan untuk metrik statistik dashboard admin yang digunakan sebagai data fallback saat mode luring."
+  },
+  "src/data/mockPackages.ts": {
+    "summary": "Dataset tiruan daftar paket make up komprehensif untuk pengujian katalog dan simulasi data tanpa koneksi database."
+  },
+  "src/data/mockQuestions.ts": {
+    "summary": "Dataset tiruan pertanyaan kuesioner rekomendasi dan opsi jawaban untuk alur pengujian kuis pencocokan paket."
+  },
+  "src/data/mockReports.ts": {
+    "summary": "Dataset tiruan data riwayat konsultasi, jawaban kuesioner pengguna, dan statistik paket diminati untuk tampilan laporan."
+  },
+  "src/index.css": {
+    "summary": "Berkas stylesheet utama yang memuat direktif Tailwind CSS dan konfigurasi tata letak tipografi global aplikasi."
+  },
+  "src/lib/adminAuth.ts": {
+    "summary": "Pustaka utilitas sisi klien untuk mengelola sesi admin, menyimpan status otentikasi di penyimpanan lokal, dan memeriksa login."
+  },
+  "src/lib/packageStore.ts": {
+    "summary": "Modul pustaka untuk mengelola state data paket make up dan menyediakan fungsi sinkronisasi dengan database Supabase."
+  },
+  "src/lib/questionStore.ts": {
+    "summary": "Modul pustaka untuk mengelola state pertanyaan kuesioner, memuat opsi jawaban, dan menyediakan fungsi mutasi data kuesioner."
+  },
+  "src/lib/supabase.ts": {
+    "summary": "Modul inisialisasi klien Supabase menggunakan kredensial URL dan Anon Key untuk interaksi database PostgreSQL."
+  },
+  "src/main.tsx": {
+    "summary": "Titik masuk utama aplikasi React yang me-mount komponen App ke dalam container root DOM menggunakan ReactDOM."
+  },
+  "src/pages/AdminDashboardPage.tsx": {
+    "summary": "Halaman dashboard utama admin yang menampilkan ringkasan metrik statistik, performa paket terpopuler, dan pintasan menu navigasi."
+  },
+  "src/pages/AdminLoginPage.tsx": {
+    "summary": "Halaman login panel admin yang memfasilitasi autentikasi pengelola sistem dengan formulir kredensial aman."
+  },
+  "src/pages/CatalogPage.tsx": {
+    "summary": "Halaman katalog publik yang menyajikan seluruh paket make up dengan dukungan fitur pencarian dan penyaringan kategori acara."
+  },
+  "src/pages/ManageDataReportsPage.tsx": {
+    "summary": "Halaman administrasi data dan laporan yang merangkum tabel riwayat rekomendasi pengguna, statistik paket diminati, dan detail jawaban kuesioner."
+  },
+  "src/pages/ManagePackagesPage.tsx": {
+    "summary": "Halaman panel admin untuk mengelola katalog paket make up, mencakup penambahan, penyuntingan, penghapusan, dan status ketersediaan."
+  },
+  "src/pages/ManageQuestionsPage.tsx": {
+    "summary": "Halaman panel admin untuk menyusun butir pertanyaan kuesioner, menentukan opsi jawaban, dan mengatur urutan tampilan pertanyaan."
+  },
+  "src/pages/ManageWeightsPage.tsx": {
+    "summary": "Halaman panel admin untuk menetapkan kriteria keputusan SAW, menyesuaikan bobot preferensi kriteria, dan mengatur matriks nilai jawaban."
+  },
+  "src/pages/PackageDetailPage.tsx": {
+    "summary": "Halaman detail paket make up untuk melihat spesifikasi lengkap layanan rias, galeri foto, rincian biaya, dan pemesanan."
+  },
+  "src/pages/RecommendationDetailPage.tsx": {
+    "summary": "Halaman rincian jawaban pengguna untuk satu sesi rekomendasi lengkap dengan profil pemesan, skor kriteria SAW, dan catatan tindak lanjut."
+  },
+  "src/pages/RecommendationPage.tsx": {
+    "summary": "Halaman kuesioner rekomendasi interaktif bagi calon pengantin untuk memilih preferensi acara dan mendapatkan rekomendasi paket berbasis SAW."
+  },
+  "src/types/index.ts": {
+    "summary": "Koleksi definisi tipe TypeScript terpusat untuk entitas paket make up, pertanyaan, kriteria SAW, riwayat rekomendasi, dan status autentikasi."
+  },
+  "src/utils/formatters.ts": {
+    "summary": "Fungsi pembantu utilitas untuk memformat representasi angka mata uang Rupiah, penanggalan lokal Indonesia, dan persentase skor."
+  },
+  "src/utils/sawEngine.ts": {
+    "summary": "Mesin kalkulasi algoritma Simple Additive Weighting (SAW) yang menangani pembentukan matriks keputusan, normalisasi, dan perangkingan paket."
+  },
+  "src/vite-env.d.ts": {
+    "summary": "Berkas deklarasi tipe lingkungan pengembangan Vite untuk mendukung pembacaan variabel environment pada kode sumber."
+  },
+  "supabase/migrations/20260912000001_create_packages_table.sql": {
+    "summary": "Skrip migrasi SQL untuk membuat tabel packages beserta kolom harga, kategori, fitur layanan, dan indeks pencarian database."
+  },
+  "supabase/migrations/20260912000002_create_recommendation_schema.sql": {
+    "summary": "Skrip migrasi SQL untuk mendefinisikan skema tabel rekomendasi dan relasi penyimpanan riwayat perhitungan SPK."
+  },
+  "supabase/migrations/20260912000003_create_admin_auth_schema.sql": {
+    "summary": "Skrip migrasi SQL untuk membuat tabel admin_users, mekanisme hashing kata sandi, dan tabel sesi login pengelola."
+  },
+  "supabase/migrations/20260912000004_create_questions_and_options_tables.sql": {
+    "summary": "Skrip migrasi SQL untuk membangun struktur tabel questions dan options beserta aturan constraint integritas data."
+  },
+  "supabase/migrations/20260912000005_create_criteria_weights_table.sql": {
+    "summary": "Skrip migrasi SQL untuk membuat tabel criteria_weights guna mencatat bobot kriteria SAW dan batasan jumlah total bobot."
+  },
+  "supabase/migrations/20260912000006_create_option_scores_table.sql": {
+    "summary": "Skrip migrasi SQL untuk memetakan nilai kecocokan skor setiap opsi jawaban terhadap alternatif paket make up."
+  },
+  "supabase/migrations/20260912000007_create_recommendation_history_schema.sql": {
+    "summary": "Skrip migrasi SQL untuk membuat tabel recommendations, recommendation_answers, dan recommendation_results dengan aturan RLS dan indeks performa."
+  },
+  "supabase/seed.sql": {
+    "summary": "Skrip SQL penabur data awal untuk mengisi paket make up standar, kriteria penilaian, dan matriks bobot default ke database."
+  },
+  "supabase/seed_recommendation.sql": {
+    "summary": "Skrip SQL penabur data riwayat rekomendasi dan jawaban kuesioner pengguna untuk simulasi laporan dan pengujian sistem."
+  },
+  "tailwind.config.js": {
+    "summary": "Berkas konfigurasi sistem desain Tailwind CSS yang menentukan skema warna tema rias, varian responsif, dan path template proyek."
+  },
+  "tsconfig.json": {
+    "summary": "Berkas konfigurasi compiler TypeScript yang mengatur mode transpilasi ketat, modul ECMAScript, dan integrasi JSX React."
+  },
+  "vite.config.ts": {
+    "summary": "Berkas konfigurasi bundler Vite untuk aplikasi React dengan pengaturan plugin optimasi kompilasi dan pemetaan path alias."
+  }
+}
