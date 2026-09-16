@@ -50,13 +50,14 @@ export default async function handler(req: any, res: any) {
           .single();
 
         if (!error && data) {
+          const criteriaObj: any = Array.isArray(data.criteria) ? data.criteria[0] : data.criteria;
           return res.status(200).json({
             success: true,
             data: {
               id: data.id,
-              criteriaId: data.criteria?.id,
-              criteriaName: data.criteria?.name,
-              weight: data.criteria?.weight,
+              criteriaId: criteriaObj?.id,
+              criteriaName: criteriaObj?.name,
+              weight: criteriaObj?.weight,
               orderIndex: data.order_index,
               text: data.text,
               subtitle: data.subtitle,

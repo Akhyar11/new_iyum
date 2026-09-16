@@ -215,6 +215,7 @@ export default async function handler(req: any, res: any) {
         facilities: finalFacilities,
         category: (category && typeof category === 'string' && category.trim()) ? category.trim() : 'Umum',
         status: status === 'inactive' ? 'inactive' : 'active',
+        notes: [] as string[],
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString()
       };

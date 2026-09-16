@@ -57,21 +57,23 @@ export default async function handler(req: any, res: any) {
 
         const { data, error } = await queryBuilder.single();
         if (!error && data) {
+          const rawData: any = data;
+          const topPkg: any = Array.isArray(rawData.top_package) ? rawData.top_package[0] : rawData.top_package;
           const detailItem = {
-            id: data.id,
-            code: data.code || data.id,
-            clientName: data.client_name,
-            clientPhone: data.client_phone || '-',
-            eventDate: data.event_date || 'Belum Dijadwalkan',
-            recommendedPackage: data.top_package?.name || data.top_package_name || 'Paket Rekomendasi',
-            recommendedPackageCode: data.top_package?.code || data.top_package_code || 'PKG-ALL-IN',
-            topScore: Number(data.top_score) || 0,
-            budgetRange: data.budget_range || '-',
-            status: data.status || 'Selesai',
-            adminNotes: data.admin_notes || '',
-            timestamp: new Date(data.created_at).toLocaleDateString('id-ID') + ', ' + new Date(data.created_at).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' }) + ' WIB',
-            created_at: data.created_at,
-            answers: data.raw_answers || {},
+            id: rawData.id,
+            code: rawData.code || rawData.id,
+            clientName: rawData.client_name,
+            clientPhone: rawData.client_phone || '-',
+            eventDate: rawData.event_date || 'Belum Dijadwalkan',
+            recommendedPackage: topPkg?.name || rawData.top_package_name || 'Paket Rekomendasi',
+            recommendedPackageCode: topPkg?.code || rawData.top_package_code || 'PKG-ALL-IN',
+            topScore: Number(rawData.top_score) || 0,
+            budgetRange: rawData.budget_range || '-',
+            status: rawData.status || 'Selesai',
+            adminNotes: rawData.admin_notes || '',
+            timestamp: new Date(rawData.created_at).toLocaleDateString('id-ID') + ', ' + new Date(rawData.created_at).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' }) + ' WIB',
+            created_at: rawData.created_at,
+            answers: rawData.raw_answers || {},
             answersDetail: (data.answers || []).map((a: any) => ({
               questionId: a.question_code || a.question_id,
               questionText: a.question_text || 'Pertanyaan Kriteria',

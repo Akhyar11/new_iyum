@@ -63,7 +63,7 @@ export default async function handler(req: any, res: any) {
           const opt = (q.options || []).find((o: any) => o.id === optionId);
           if (opt) {
             opt.scores = opt.scores || {};
-            opt.scores[packageId] = parsedScore;
+            (opt.scores as Record<string, any>)[packageId] = parsedScore;
             return res.status(200).json({
               success: true,
               message: 'Nilai skor berhasil diperbarui.',

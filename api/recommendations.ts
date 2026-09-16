@@ -322,7 +322,8 @@ export default async function handler(req: any, res: any) {
         const weightFraction = weightVal / 100;
 
         packagesList.forEach(pkg => {
-          const rawScore = (option.scores && (option.scores[pkg.id] ?? option.scores[pkg.code?.toLowerCase()])) || 2;
+          const scoresMap = option.scores as Record<string, number> | undefined;
+          const rawScore = (scoresMap && (scoresMap[pkg.id] ?? scoresMap[pkg.code?.toLowerCase()])) || 2;
           const normalizedValue = rawScore / 4;
           const weightedContribution = weightFraction * normalizedValue;
 
